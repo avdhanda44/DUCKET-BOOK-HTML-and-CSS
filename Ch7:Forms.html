@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="http://www.example.com/login.php">
+        <fieldset>
+            <legend>User details</legend>
+            <label>Username:
+                <input type="text" name="username" size="15" maxlength="30" /></label><br />
+            <label>Password:
+                <input type="password" name="password" size="15" maxlength="30" required="required" /></label><br />
+            <label>Telephone
+                <input type="text" name="telephone" /></label><br />
+            <label for="username">Departure date:
+                <input type="date" name="depart" />
+                <input type="submit" value="Submit" /></label><br />
+            <label for="username">Gender:
+                <input id="female" type="radio" name="gender" value="f">
+                <label for="female">Female</label>
+                <input id="male" type="radio" name="gender" value="m">
+                <label for="male">Male</label></label>
+        </fieldset>
+
+        <p>Please select your flight name:<br />
+            <input type="radio" name="genre" value="rock" checked="checked" /> Airways
+            <input type="radio" name="genre" value="pop" />Indigo
+            <input type="radio" name="genre" value="jazz" />Qatar
+        </p>
+
+        <p>How many cary bag you have?
+            <select name="devices">
+                <option value="one">One</option>
+                <option value="two">Two</option>
+                <option value="three">Three</option>
+            </select>
+        </p></br>
+
+        Food you want in the flight:<br />
+        <select name="food" size="1" multiple="multiple">
+            <option value="biryani" selected="selected">Biryani</option>
+            <option value="sushi">Sushi</option>
+            <option value="poha" selected="selected">Poha</option>
+            <option value="badapav">Badapav</option>
+        </select>
+
+
+        <p>Upload you Id Proof:</p>
+        <input type="file" name="user-song" /><br />
+        <input type="submit" value="Upload" />
+
+        <p>Subscribe to our email list:</p>
+        <input type="email" name="email" />
+        <input type="image" src="images/subscribe.jpg" width="100" height="40" />
+
+        <p>Feedback for the Website?</p>
+        <textarea name="feedback" cols="20" rows="4">Enter your Feedback...</textarea>
+
+    </form>
+</body>
